@@ -10,19 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade0da20-cb7f-4e9c-998c-47b6bcf0201b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/DotSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ResultsSaving.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Cut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Cut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Cut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/DotSetting.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/ImageProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/ImageProcessing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Results.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoDownload.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoDownload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/глаз(7).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Cut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Windows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MouseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DotSetting.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ImageProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ImageProcessing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Results.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/VideoDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VideoDownload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/VideoPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VideoPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/глаз(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Windows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Windows.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

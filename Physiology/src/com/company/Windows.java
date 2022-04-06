@@ -6,6 +6,12 @@ import org.opencv.imgcodecs.Imgcodecs;
 import javax.swing.*;
 
 public class Windows {
+    Windows(int x, int y) {
+        window.setLocation(x, y);
+        this.x = x;
+        this.y = y;
+    }
+    int x, y;
     JFrame window = new JFrame();
     JLabel screen = new JLabel();
     MatOfByte buf = new MatOfByte();
