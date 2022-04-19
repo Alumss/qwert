@@ -9,14 +9,10 @@ public class Main extends JFrame {
     }
 
     public static void main(String[] args) {
-        //координата х появления окна
-        int x = 0;
-        //координата у появления окна
-        int y = 100;
         //создание окна
-        Windows windows = new Windows(x, y);
+        Windows windows = new Windows();
         //запуск проигрывания видео
-        VideoPlay vPlay = new VideoPlay(windows, null);
+        VideoPlay vPlay = new VideoPlay(windows);
         //проигрывание исходного видео
         vPlay.play();
     }

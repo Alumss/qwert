@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Physiology:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Physiology_jar</output-path>
-    <root id="archive" name="Physiology_jar.jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="Physiology.jar">
       <element id="module-output" name="Physiology" />
       <element id="extracted-dir" path="$USER_HOME$/opencv/build/java/opencv-455.jar" path-in-jar="/" />
     </root>

@@ -8,7 +8,6 @@ public class ResultsSaving {
     void save() {
         try {
             FileWriter results = new FileWriter("results.txt");
-
         } catch (
                 IOException ex) {
             ex.printStackTrace();

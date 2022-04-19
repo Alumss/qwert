@@ -6,11 +6,18 @@ import org.opencv.imgcodecs.Imgcodecs;
 import javax.swing.*;
 
 public class Windows {
+
+    Windows() {
+        this(0, 100);
+    }
+
     Windows(int x, int y) {
-        window.setLocation(x, y);
         this.x = x;
         this.y = y;
+        window.setLocation(x, y);
     }
+
+    //координата х, у появления окна
     int x, y;
     JFrame window = new JFrame();
     JLabel screen = new JLabel();

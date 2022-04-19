@@ -2,7 +2,6 @@ package com.company;
 
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Timer;
@@ -10,26 +9,23 @@ import java.util.TimerTask;
 
 public class VideoPlay {
 
-    VideoPlay(Windows windows, Point[] array) {
+    VideoPlay(Windows windows) {
         this.windows = windows;
-        this.array = array;
     }
 
-    Point[] array;
     //переменная, содержащая номер кадра
     int num = 0;
     //создаие окна
     Windows windows;
     VideoDownload vD = new VideoDownload();
     //загрузка видео
-    VideoCapture video = new VideoCapture(vD.name0);
+    VideoCapture video = new VideoCapture(vD.getPathVideo());
     Mat img = new Mat();
     Timer timer = new Timer();
 
-    void play(int startX, int endX, int startY, int endY) {
+    void play(int startX, int endX, int startY, int endY, Mat mask) {
         vD.setVideo(video);
         VideoCapture cap = vD.getVideo();
-
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
@@ -38,7 +34,7 @@ public class VideoPlay {
                     if (num > 50) {
                         cap.retrieve(img);
                         img = img.colRange(startX, endX).rowRange(startY, endY);
-                        ImageProcessing imageProcessing = new ImageProcessing(array);
+                        ImageProcessing imageProcessing = new ImageProcessing(mask);
                         img = imageProcessing.make(img);
                         windows.show(img);
                         System.out.println(num);
@@ -55,44 +51,66 @@ public class VideoPlay {
         void play() {
             vD.setVideo(video);
             VideoCapture cap = vD.getVideo();
-            //отрисовка прямоугольника
-            Rectangle rect = new Rectangle();
-            //обрезка кадра
-            MouseAction mouseAction = new MouseAction(windows, rect);
             //добавление движений мыши
+            MouseAction mouseAction = new MouseAction(windows);
             windows.screen.addMouseListener(mouseAction);
+            windows.screen.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mousePressed(MouseEvent e) {
+                    timer.cancel();
+                }
+            });
             windows.screen.addMouseMotionListener(mouseAction);
+            MouseActionRemove mouseActionRemove = new MouseActionRemove(windows, mouseAction);
+            windows.screen.addMouseListener(mouseActionRemove);
 
             TimerTask task = new TimerTask() {
-                @Override
-                public void run() {
-                    if (cap.grab()) {
-                        num++;
-                        windows.screen.addMouseListener(new MouseAdapter() {
-                            @Override
-                            public void mousePressed(MouseEvent e) {
+                        @Override
+                        public void run() {
+                            if (cap.grab()) {
+                                num++;
+                                mouseActionRemove.num = num;
+                                if (num > 50) {
+                                    cap.retrieve(img);
+                                    windows.show(img);
+                                    System.out.println(num);
+                                }
+                            } else {
                                 timer.cancel();
+                                System.out.println("Task completed");
                             }
-                        });
-                        windows.screen.addMouseListener(new MouseAdapter() {
-                            @Override
-                            public void mouseReleased(MouseEvent e) {
-                                windows.screen.removeMouseListener(mouseAction);
-                                windows.screen.removeMouseMotionListener(mouseAction);
-                            }
-                        });
-                        if (num > 50) {
-                            cap.retrieve(img);
-                            windows.show(img);
-                            System.out.println(num);
                         }
+                    };
+        timer.schedule(task, 0, 50);
+    }
+
+    void play(int startX, int endX, int startY, int endY, int numPlay) {
+        vD.setVideo(video);
+        VideoCapture cap = vD.getVideo();
+
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                if (cap.grab()) {
+                    num++;
+                    if (num == numPlay) {
+                        cap.retrieve(img);
+                        img = img.colRange(startX, endX).rowRange(startY, endY);
+                        windows.show(img);
+                        //1 cadre => 1 object (mold)
+                        Mold mold = new Mold(windows, img);
+                        mold.accept(startX, endX, startY , endY);
+                        windows.screen.addMouseMotionListener(mold);
+                        windows.screen.addMouseWheelListener(mold);
+                        windows.screen.addMouseListener(mold);
+                        System.out.println(num);
                     }
-                    else {
-                        timer.cancel();
-                        System.out.println("Task completed");
-                    }
+                } else {
+                    timer.cancel();
+                    System.out.println("Task completed");
                 }
-            };
-        timer.schedule(task, 0, 100);
+            }
+        };
+        timer.schedule(task, 0, 10);
     }
 }

@@ -10,27 +10,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade0da20-cb7f-4e9c-998c-47b6bcf0201b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/ResultsSaving.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Mold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Physiology_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Physiology_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Cut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/DotSetting.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/ImageProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/ImageProcessing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Results.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/MouseAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/MouseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/MouseAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/ResultsSaving.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/ResultsSaving.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoDownload.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoDownload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$2$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/VideoPlay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Physiology/com/company/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Physiology/com/company/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MouseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DotSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/ghj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/hjk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/qwert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/v.vid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/Безымянный.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/ВНФ_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/ВНФ_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/ВНФ_82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Physiology/глаз.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ImageProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ImageProcessing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Results.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MouseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MouseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ResultsSaving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ResultsSaving.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/VideoDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VideoDownload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/VideoPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VideoPlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Windows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Windows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ghj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hjk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qwert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v.vid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Безымянный.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ВНФ_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ВНФ_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ВНФ_82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/глаз.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/problem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
