@@ -13,17 +13,17 @@ public class Mold extends MouseAdapter {
         this.windows = windows;
         this.img = img;
         //радиус окружности
-        radius = 10;
+        radius = 5;
         //для отслеживания относительного изменения размера
         x = 0;
         c = 0;
         engelIris = 15;
         engelSclera = 5;
-        DIAMETERSCLERA = 90;
-        DIAMETERIRIS = 70;
+        DIAMETERSCLERA = 200;
+        DIAMETERIRIS = 200;
     }
 
-    int x, radius, c, engelIris, engelSclera, diameterIris, diameterSclera, startX, endX, startY, endY;
+    int a, b, x, radius, c, engelIris, engelSclera, diameterIris, diameterSclera, startX, endX, startY, endY;
     final int DIAMETERSCLERA;
     final int DIAMETERIRIS;
     Windows windows;
@@ -71,18 +71,24 @@ public class Mold extends MouseAdapter {
 
     @Override
     public void mouseWheelMoved(MouseWheelEvent e) {
-        x += e.getWheelRotation();
-        if (x <= 0) x = 0;
-        if (x >= 100) x = 100;
-        if (x > 0 && x < 100) {
+        x = e.getWheelRotation();
+        if (x > 0) {
+            a += x;
             repaint();
-            System.out.println(x);
-
-            diameterIris = DIAMETERIRIS * x / 100;
-            diameterSclera = DIAMETERSCLERA * x / 100;
-
+            System.out.println(a);
+            diameterIris = DIAMETERIRIS * a / 100;
             draw(imgPreview);
             windows.show(imgPreview);
+            if (a == 100) a = 0;
+        }
+        if (x < 0) {
+            b += x;
+            repaint();
+            System.out.println(b);
+            diameterSclera = DIAMETERSCLERA * -b / 100;
+            draw(imgPreview);
+            windows.show(imgPreview);
+            if (b == -100) b = 0;
         }
     }
 

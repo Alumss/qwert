@@ -52,16 +52,16 @@ public class VideoPlay {
             vD.setVideo(video);
             VideoCapture cap = vD.getVideo();
             //добавление движений мыши
-            MouseAction mouseAction = new MouseAction(windows);
-            windows.screen.addMouseListener(mouseAction);
+            Rectangle rectangle = new Rectangle(windows);
+            windows.screen.addMouseListener(rectangle);
             windows.screen.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mousePressed(MouseEvent e) {
                     timer.cancel();
                 }
             });
-            windows.screen.addMouseMotionListener(mouseAction);
-            MouseActionRemove mouseActionRemove = new MouseActionRemove(windows, mouseAction);
+            windows.screen.addMouseMotionListener(rectangle);
+            MouseActionRemove mouseActionRemove = new MouseActionRemove(windows, rectangle);
             windows.screen.addMouseListener(mouseActionRemove);
 
             TimerTask task = new TimerTask() {
